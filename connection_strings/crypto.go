@@ -9,7 +9,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/AntoniusIvan/go-Sample3FrlConnect/logger"
+	"go-Sample3FrlConnect/logger"
 )
 
 var ErrUnPadding = errors.New("UnPadding error")
@@ -50,7 +50,7 @@ func tripleDESECBEncrypt(data, key string) (string, error) {
 	return base64.StdEncoding.EncodeToString(enc), nil
 }
 
-func tripleDESECBDecrypt(data, key string) (string, error) {
+image.pngfunc tripleDESECBDecrypt(data, key string) (string, error) {
 	value, err := base64.StdEncoding.DecodeString(data)
 	if err != nil {
 		logger.Error(err.Error())

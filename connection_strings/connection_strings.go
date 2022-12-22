@@ -9,9 +9,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/AntoniusIvan/go-Sample3FrlConnect/logger"
+	"go-Sample3FrlConnect/logger"
+
 	"github.com/jmoiron/sqlx"
-	"github.com/joho/godotenv"
 	_ "github.com/microsoft/go-mssqldb"
 )
 
@@ -37,11 +37,11 @@ type DBClient struct {
 }
 
 func ConnectToDB(projCode, pubKey string) (*DBClient, error) {
-	err := godotenv.Load(".env")
-	if err != nil {
-		logger.Fatal("Error loading .env file")
-		panic(err)
-	}
+	// err := godotenv.Load(".env")
+	// if err != nil {
+	// 	logger.Fatal("Error loading .env file")
+	// 	panic(err)
+	// }
 
 	mainDB := connectToMainDatabase(pubKey)
 
