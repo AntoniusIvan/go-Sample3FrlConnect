@@ -7,7 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/AntoniusIvan/go-Sample3FrlConnect/logger"
+	"go-Sample3FrlConnect/logger"
+
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"
 	_ "github.com/microsoft/go-mssqldb"
