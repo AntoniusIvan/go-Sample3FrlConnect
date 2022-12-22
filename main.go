@@ -13,7 +13,8 @@ import (
 var db *sql.DB
 
 func main() {
-	connection_strings.ConnectToDB("TTSDB", "TestaPub")
+	//connection_strings.ConnectToDB("TTSDB", "TestaPub")
+	connection_strings.ConnectToDB("TTSDB", "TestPub")
 
 	test1 := fmt.Sprintf("server=%s;",
 		mssql.ErrorTypeSliceIsEmpty)

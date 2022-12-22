@@ -50,7 +50,7 @@ func tripleDESECBEncrypt(data, key string) (string, error) {
 	return base64.StdEncoding.EncodeToString(enc), nil
 }
 
-image.pngfunc tripleDESECBDecrypt(data, key string) (string, error) {
+func tripleDESECBDecrypt(data, key string) (string, error) {
 	value, err := base64.StdEncoding.DecodeString(data)
 	if err != nil {
 		logger.Error(err.Error())
